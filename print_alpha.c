@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_string - loops through a string and prints
  * every character
@@ -11,9 +10,7 @@
 int print_string(va_list l, flags_t *f)
 {
 	char *s = va_arg(l, char *);
-
 	(void)f;
-
 	if (!s)
 		s = "(null)";
 	return (_puts(s));
